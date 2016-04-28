@@ -1,6 +1,13 @@
 def ler_cheque(extenso):
-	if extenso == "um real":
+
+	partes = extenso.split()
+
+	if partes[0] == "um":
 		return 1
 
-	if extenso == "um real e um centavo":
-		return 1.1
+	if partes[0] == "dois":
+		return 2
+
+	#if extenso == "um real e um centavo":
+	#	return 1.1
+
